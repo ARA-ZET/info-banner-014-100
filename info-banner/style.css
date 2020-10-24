@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+.component-overlay {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgb(0, 0, 0)
+  );
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.component {
+  margin: 4rem auto;
+  width: 24rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.4rem;
+  background-color: rgb(35, 77, 77);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  color: rgb(78, 77, 77);
+}
+
+
+.banner img {
+  width: 100%;
+}
+
+.text h1 {
+  color: #fff;
+  font-size: 3rem;
+  cursor: context-menu;
+  letter-spacing: 0rem;
+}
+
+.text span {
+  display: inline-block;
+}
+
+span:hover {
+  color: #48cfad;
+  transition: all 0.5s;
+}
+
+.name {
+  color: #e4762c;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+
+span .m-left {
+  margin-left: -6px;
+}
+
+.text p {
+  margin-top: 1rem;
+  padding: 0.4rem;
+  color: #6d6d6d;
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  border: 1px solid #e4aa83;
+  width: fit-content;
+}
+
+.social {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fab {
+  color: white;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+.banner {
+  position: relative;
+  z-index: 1;
+  border-bottom: 0.2rem solid orange;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.text {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%);
+}
+
+
+@media screen and (max-width: 1000px) {
+  .text .fab {
+    font-size: 1.9rem;
+  }
+  .text h1 {
+    font-size: 2rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .text .fab {
+    font-size: 1.3rem;
+    margin-right: 0 1rem;
+  }
+  .text .social {
+    margin-top: 1rem;
+    padding: 0;
+  }
+  .text h1 {
+    font-size: 1.6rem;
+  }
+  .text p {
+    font-size: 0.7rem;
+  }
+}
+
+
+@media screen and (max-width: 530px) {
+  .text .fab {
+    font-size: 1rem;
+    margin-right: 0 0.6rem;
+  }
+  .text .social {
+    margin-top: 1rem;
+    padding: 0;
+  }
+  .text h1 {
+    font-size: 1rem;
+  }
+  .text p {
+    font-size: 0.55rem;
+  }
+
+  
+}
